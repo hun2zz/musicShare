@@ -1,5 +1,6 @@
 package com.jsp;
 
+import static com.jsp.UserRepository.loggingUser;
 import static util.SimpleInput.input;
 
 public class UserLoginSuccessView {
@@ -26,10 +27,20 @@ public class UserLoginSuccessView {
                 case"3":
                     break;
                 case"4":
+                    myPage();
                     break;
                 case"5":
                     break;
             }
         }
+    }
+
+
+    public void myPage() {
+        System.out.println(loggingUser.getName());
+        System.out.println(loggingUser.getAge());
+        System.out.println(loggingUser.getEmail());
+        System.out.println(loggingUser.getNickname());
+        System.out.println(loggingUser.getPassword());
     }
 }
