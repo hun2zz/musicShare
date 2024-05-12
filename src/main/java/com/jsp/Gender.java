@@ -1,2 +1,5 @@
-package com.jsp;public enum Gender {
-}
+package com.jsp;
+
+public enum Gender {
+        MALE, FEMALE, NULL
+    }
